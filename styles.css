@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('building.png') no-repeat center center fixed; /* Correct path if it's in the same directory */
+    background-size: cover;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: bold;
+}
+body.about-page {
+    background: url('about-background.jpg') no-repeat center center fixed; /* Unique background for about.html */
+    background-size: cover;
+}
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header img {
+    max-height: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FFB6C1;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FF69B4;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+h2 {
+    color: #004d99;
+    font-size: 28px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+#events, #upcoming-events, #faqs {
+    text-align: left;
+    line-height: 2.0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    header img {
+        max-height: 60px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
