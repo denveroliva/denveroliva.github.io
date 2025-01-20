@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahal Mo Ba Ako?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .gif-container {
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        #no {
+            position: relative;
+        }
+    </style>
+    <script>
+        function moveNoButton() {
+            const noButton = document.getElementById('no');
+            const randomX = Math.floor(Math.random() * (window.innerWidth - 100));
+            const randomY = Math.floor(Math.random() * (window.innerHeight - 100));
+            noButton.style.position = "absolute";
+            noButton.style.left = `${randomX}px`;
+            noButton.style.top = `${randomY}px`;
+        }
+
+        function redirectToYes() {
+            window.location.href = "yes.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="gif-container">
+        <!-- Replace the GIF URL with your preferred GIF link -->
+        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3d0dWEwYnh0bDdhd3RiZDNkc3FoOW5vaGQ2b3h5ZTQ4NnBna2NueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sXv0vaA4331Ti/giphy.webp" alt="Cute GIF" width="300">
+    </div>
+    <h1>ma'am Guia bibigyan nyo po ba kami ng +points?.</h1>
+    <button id="yes" onclick="redirectToYes()">(Yes)+ Points</button>
+    <button id="no" onmouseover="moveNoButton()">(no)- Points</button>
+</body>
+</html>
